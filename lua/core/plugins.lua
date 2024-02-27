@@ -38,12 +38,16 @@ return require('packer').startup(function(use)
     'L3MON4D3/LuaSnip',
     'saadparwaiz1/cmp_luasnip'
   }
+
   -- lsp stuff
   use {
     'williamboman/mason.nvim',
     'williamboman/mason-lspconfig.nvim',
     'neovim/nvim-lspconfig',
   }
+
+  -- vertical lines
+  use 'lukas-reineke/indent-blankline.nvim'
 
   -- My plugins here
   -- use 'foo1/bar1.nvim'
