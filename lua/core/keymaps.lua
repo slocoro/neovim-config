@@ -17,5 +17,17 @@ vim.opt.expandtab = true
 -- line numbers
 vim.wo.number = true
 
+-- mouse mode
+vim.opt.mouse = 'a'
+
+-- enable access to system clipboard
+vim.opt.clipboard = 'unnamed,unnamedplus'
+
+-- add column line
+vim.opt.colorcolumn = '80'
+
+-- minimum lines below cursor
+vim.opt.scrolloff = 8
+
 -- key maps
-vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
+vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')

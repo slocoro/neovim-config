@@ -49,9 +49,16 @@ return require('packer').startup(function(use)
   -- vertical lines
   use 'lukas-reineke/indent-blankline.nvim'
 
-  -- My plugins here
-  -- use 'foo1/bar1.nvim'
-  -- use 'foo2/bar2.nvim'
+  -- terminal
+  use 'akinsho/toggleterm.nvim'
+
+  -- comment code
+  use {
+      'numToStr/Comment.nvim',
+      config = function()
+          require('Comment').setup()
+      end
+  }
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
